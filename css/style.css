@@ -5,3 +5,25 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
 }
+/* .sideNavOpen{ */
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0px 0px 20px;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+    transition: 1.5s;
+}
+.sideNavClose{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0px 0px 20px;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+    transition: 1.5s;
+}
