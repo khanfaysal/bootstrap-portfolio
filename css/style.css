@@ -1,58 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
-.menuIcon{
-    color: springgreen !important;
-    font-size: 25px ;
+.burgerMenuIcon {
+  color: #000000 !important;
+  font-size: 25px;
 }
- .sideNavOpen{ 
-    height: 100%;
-    width: 220px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px 0px 0px 20px;
-    background-color: antiquewhite;
-    overflow-x: hidden;
-    transition: .5s;
-    z-index: 10;
-    background-color: salmon;
-    
+.sideBarImg {
+  /* margin-right: 5px; */
 }
-.sideNavClose{
-    height: 100%;
-    width: 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px 0px 0px 20px;
-    background-color: antiquewhite;
-    overflow-x: hidden;
-    transition: .5s;
-    visibility: hidden;
-    z-index: 10;
+.navLiItem {
+  display: inline-block;
+  color: #000000;
 }
-.entireContentOverlay{
-    display: block;
-    height: 100%;
-    background-color: rgba(0,0,255,0.3);
-    z-index: 7;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    position: fixed; 
-    cursor: pointer;  
+.navLiItem:hover {
+  color: #3444f1;
+  transition: 0.5s;
 }
-.entireContentOverlayClose{
-    display: none;
+.navLiItem::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #3444f1;
+  transition: width 0.3s;
 }
-.mainContent{
-    margin-top: 75px;
-    z-index: 5;
-
+.navLiItem:hover::after {
+  width: 100%;
+}
+.sidebarSocial a {
+  color: #000000;
+  padding-right: 7px;
+}
+.sidebarSocial a:hover {
+  color: slategray;
+  transition: 0.5s;
+}
+.sideNavOpen {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  padding: 37px 20px;
+  top: 0;
+  left: 0;
+  /* padding: 20px 0px 0px 20px; */
+  background-color: antiquewhite;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 10;
+  background-color: #ffffff;
+  overflow-y: hidden;
+}
+.sideNavClose {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0px 0px 20px;
+  background-color: antiquewhite;
+  overflow-x: hidden;
+  transition: 0.5s;
+  visibility: hidden;
+  z-index: 10;
+}
+.entireContentOverlay {
+  display: block;
+  height: 100%;
+  background-color: rgba(52, 68, 241, 0.6);
+  z-index: 7;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  cursor: pointer;
+}
+.entireContentOverlayClose {
+  display: none;
+}
+.mainContent {
+  /* margin-left: 65px;   */
+  /* margin-top: 75px; */
+  z-index: 5;
 }
