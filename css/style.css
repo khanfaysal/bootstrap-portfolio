@@ -5,7 +5,11 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
 }
-/* .sideNavOpen{ */
+.menuIcon{
+    color: springgreen !important;
+    font-size: 25px ;
+}
+ .sideNavOpen{ 
     height: 100%;
     width: 220px;
     position: fixed;
@@ -14,7 +18,10 @@
     padding: 20px 0px 0px 20px;
     background-color: antiquewhite;
     overflow-x: hidden;
-    transition: 1.5s;
+    transition: .5s;
+    z-index: 10;
+    background-color: salmon;
+    
 }
 .sideNavClose{
     height: 100%;
@@ -25,5 +32,27 @@
     padding: 20px 0px 0px 20px;
     background-color: antiquewhite;
     overflow-x: hidden;
-    transition: 1.5s;
+    transition: .5s;
+    visibility: hidden;
+    z-index: 10;
+}
+.entireContentOverlay{
+    display: block;
+    height: 100%;
+    background-color: rgba(0,0,255,0.3);
+    z-index: 7;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position: fixed; 
+    cursor: pointer;  
+}
+.entireContentOverlayClose{
+    display: none;
+}
+.mainContent{
+    margin-top: 75px;
+    z-index: 5;
+
 }
